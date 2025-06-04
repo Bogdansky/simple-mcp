@@ -1,0 +1,11 @@
+@McpServer_HostAddress = http://localhost:5260
+
+GET {{McpServer_HostAddress}}/todos/
+Accept: application/json
+
+###
+
+GET {{McpServer_HostAddress}}/todos/1
+Accept: application/json
+
+###

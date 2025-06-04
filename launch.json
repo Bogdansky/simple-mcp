@@ -1,0 +1,24 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Local",
+            "type": "coreclr",
+            "request": "launch",
+            "program": "dotnet",
+            "args": "\"${workspaceFolder}/bin/Debug/net9.0/app.dll\"",
+            "cwd": "${workspaceFolder}",
+            "env": {
+              "ASPNETCORE_ENVIRONMENT": "Development"
+            },
+            "launchBrowser": {
+              "enabled": true,
+              "args": "http://localhost:5260/swagger"
+            },
+            "preLaunchTask": "dotnet: build"
+          }
+    ]
+}
